@@ -1,4 +1,5 @@
 language: java
+<<<<<<< HEAD
 jdk:
   - openjdk7
 branches:
@@ -21,3 +22,11 @@ addons:
     branch_pattern: coverity_scan
 script:
   mvn compile test
+=======
+install: mvn install -DskipTests=true
+script: mvn test
+jdk:
+	- oraclejdk7
+	- openjdk7
+	- openjdk6
+>>>>>>> 6954f61ccf41c0586fa2989adae8c963b50ed072
